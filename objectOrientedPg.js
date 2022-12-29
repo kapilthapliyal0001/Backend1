@@ -46,10 +46,15 @@ const circle3 = createCircle(3);
 
 function Circle(radius) {
   // the first letter of the constructor function is always Capital
-  (this.radius = radius),
+  (this.radius = radius), // just think this to be an empty object available
     (this.draw = function () {
       console.log("Draw a circle");
     });
 }
 
 const circle4 = new Circle(4);
+//  under the hood the new keyword ; the new operator will create an empty object ; the this in the constructor will point to the empty
+// object just created; because this in the constructor points towards the global object; if we run the code in the browser the
+// global object will be the window object if running it in the node environment the global object will be global
+
+// Functions are object in Javascript
