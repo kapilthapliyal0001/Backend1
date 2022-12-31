@@ -58,3 +58,4 @@ const circle4 = new Circle(4);
 // global object will be the window object if running it in the node environment the global object will be global
 
 // Functions are object in Javascript
+// check the OOPS javascript docs for reference
